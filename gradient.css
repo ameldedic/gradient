@@ -1,0 +1,8 @@
+background-color: $toColor; /* fallback color */
+	background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Safari 4+, Chrom */
+	background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrom 1+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF 3.6 */
+	background-image:      -ms-inear-gradient(to bottom, $fromColor, $toColor); /* IE 10 */
+	background-image:      -o-linear-gradient(to bottom, $fromColor, $toColor); /* Opera 11 */
+	background-image: linear-gradient(to bottom, $fromColor, $toColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}'); /* old IE */
